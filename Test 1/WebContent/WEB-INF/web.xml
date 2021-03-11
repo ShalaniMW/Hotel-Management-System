@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         
+          <servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>servlet.adminLoginServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/log</url-pattern>
+		</servlet-mapping>
+         
+         
+         <servlet>
+		<servlet-name>hallCheck</servlet-name>
+		<servlet-class>servlet.hallcheckServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>hallCheck</servlet-name>
+		<url-pattern>/hallCheck</url-pattern>
+		</servlet-mapping>
+         
+          <servlet>
+		<servlet-name>reservation_insert</servlet-name>
+		<servlet-class>servlet.reservationinsert</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>reservation_insert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+		</servlet-mapping>
+         
+         <servlet>
+		<servlet-name>update_reservation</servlet-name>
+		<servlet-class>servlet.UpdateReservationServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>update_reservation</servlet-name>
+		<url-pattern>/update</url-pattern>
+		</servlet-mapping>
+        
+        
+         <servlet>
+		<servlet-name>delete_reservation</servlet-name>
+		<servlet-class>servlet.DeleteReservationServlet</servlet-class>
+		</servlet>
+		<servlet-mapping>
+		<servlet-name>delete_reservation</servlet-name>
+		<url-pattern>/delete</url-pattern>
+		</servlet-mapping>
+         
+         
+         </web-app>
